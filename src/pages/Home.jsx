@@ -26,7 +26,7 @@ function Home() {
 
     <section>
       <div className="container mx-auto">
-        <h2 className='font-bold py-2 bg-red-700 text-white p2'> बैंकिङ खबर </h2>
+        <h2 className='font-bold py-2 bg-red-700 text-white p2'> अन्तर्राष्ट्रिय बैंकिङ </h2>
 
         <Swiper
         slidesPerView={3}
