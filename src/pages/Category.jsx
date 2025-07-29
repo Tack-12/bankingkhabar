@@ -5,16 +5,17 @@ import axios from "axios";
 function Category() {
   let { cid } = useParams()
   let [catpost, setCatpost] = useState([])
-  useEffect(() => {
 
+  useEffect(() => {
     axios.get(`https://bankingkhabar.com/wp-json/wp/v2/posts?categories=${cid}`)
       .then(res => {
         setCatpost(res.data);
       });
   }, [cid])
+
   return (
     <div className='container mx-auto'>
-      <h1>Category
+
         <div className='grid grid-cols-4 gap-4'>
           {catpost.slice(0, 8).map((a) => (
             <div className='shadow p-2' key={a.id}>
@@ -24,7 +25,6 @@ function Category() {
             </div>
           ))}
         </div>
-      </h1>
     </div>
   )
 }
