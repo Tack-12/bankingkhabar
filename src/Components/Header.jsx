@@ -13,8 +13,11 @@ function Header() {
   return (
    <>
    <header className='py-3'>
-    <div className="container mx-auto">
-        <img className= "w-[320px]" src={logo} alt="" />
+    <div className="container mx-auto py-2">
+        <div className='flex justify-between py-2'>
+            <img className= "w-[320px]" src={logo} alt="" />
+            <img src="https://bankingkhabar.com/wp-content/uploads/2019/03/prabhumoney.gif" alt="" />
+        </div>
 
         <nav className='bg-red-700 text-white py-2'>
             <ul className='flex gap-4'>

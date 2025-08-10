@@ -15,9 +15,11 @@ function Category() {
 
   return (
     <div className='container mx-auto'>
-
+        
         <div className='grid grid-cols-4 gap-4'>
+
           {catpost.slice(0, 8).map((a) => (
+            
             <div className='shadow p-2' key={a.id}>
               <img src={a.featured_image_src} alt="" />
               <h3 className='font-bold py-2'> {a.title.rendered}</h3>
