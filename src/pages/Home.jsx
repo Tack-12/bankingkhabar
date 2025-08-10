@@ -79,6 +79,34 @@ function Home() {
         </div>
       </section>
 
+      <section>
+        <div className="container mx-auto bg-gray-300">
+
+          <h2 className='font-bold py-2 bg-red-700 text-white p2'> अर्थ </h2>
+          <div className="flex">
+            
+            <div className="grid grid-cols-2 gap-4 w-[70%] m-4 bg-white">
+          
+              {arpost.slice(0, 4).map((a) => (
+                  <div className='shadow p-2 m-2' key={a.id}>
+                    <img src={a.featured_image_src} alt="" />
+                    <h3 className='font-bold py-2'> {a.title.rendered}</h3>
+                  </div>
+              ))}
+            </div>
+
+            <div className='w-[30%]  m-4 bg-white'>
+              <h2 className='w-[100%] font-bold py-2 bg-red-700 text-white  '>MORE NEWS</h2>
+              {arpost.slice(6, 9).map((a) => (
+                  <div className='shadow p-2 m-2' key={a.id}>
+                    <img src={a.featured_image_src} alt="" />
+                    <h3 className='font-bold py-2'> {a.title.rendered}</h3>
+                  </div>
+              ))}    
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
